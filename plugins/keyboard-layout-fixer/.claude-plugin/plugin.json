@@ -1,7 +1,7 @@
 {
   "name": "keyboard-layout-fixer",
   "displayName": "Keyboard Layout Fixer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Turns text typed with the wrong keyboard layout active back into what you meant. 31 layouts, built from Unicode CLDR.",
   "author": {
     "name": "Chaiyapat",

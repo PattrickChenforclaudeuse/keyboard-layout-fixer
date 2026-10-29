@@ -5,11 +5,12 @@ This skill notices the scrambled text, reads it back on the layout you meant, an
 
 | you typed | layout you meant | Claude reads |
 |---|---|---|
-| `l;ylfu` | Thai | สวัสดี |
-| `me'ko` | Thai | ทำงาน |
 | `ghbdtn` | Russian | привет |
+| `akuo` | Hebrew | שלום |
+| `lvpfh` | Arabic | مرحبا |
+| `vcmdls` | Hindi (INSCRIPT) | नमस्ते |
 | `dkssudgktpdy` | Korean | 안녕하세요 |
-| `้ำสสน` | English | hello |
+| `руддщ` | English | hello |
 
 31 layouts: Thai (Kedmanee, Pattachote), Lao, Khmer, Myanmar, Russian, Ukrainian, Belarusian, Bulgarian,
 Serbian, Macedonian, Kazakh, Mongolian, Greek, Hebrew, Arabic, Persian, Urdu, Pashto, Central Kurdish,

@@ -1,11 +1,11 @@
 ---
 name: keyboard-layout-fixer
 description: >
-  Fix text typed with the wrong keyboard layout (user meant Thai/Russian/Hebrew/Korean/Arabic/Greek/...
+  Fix text typed with the wrong keyboard layout (user meant Russian/Hebrew/Arabic/Korean/Thai/Greek/...
   but the keyboard was on English, or the reverse) and answer what they meant. Use when a message, or a
   run of words inside it, is gibberish that looks like keyboard-layout scramble: Latin letters with no
-  real words and odd ; ' [ ] , . mid-word (e.g. "l;ylfu", "ghbdtn", "dkssudgktpdy"), or non-Latin script
-  that spells nothing (e.g. "้ำสสน"). Also use when the user says "พิมพ์ผิดภาษา", "wrong layout",
+  real words and odd ; ' [ ] , . mid-word (e.g. "ghbdtn", "akuo", "dkssudgktpdy"), or non-Latin script
+  that spells nothing (e.g. "руддщ"). Also use when the user says "พิมพ์ผิดภาษา", "wrong layout",
   "forgot to switch keyboard", or asks to convert such text. Covers 31 layouts. Do not use for ordinary typos.
 ---
 
@@ -33,7 +33,7 @@ Character-by-character mapping from memory is where mistakes happen. If you can 
 
 ```bash
 python <skill-folder>/convert.py "<scrambled text>"        # every layout, most plausible first
-python <skill-folder>/convert.py "<text>" --langs th,ru    # only layouts the user is known to use
+python <skill-folder>/convert.py "<text>" --langs ru,he    # only layouts the user is known to use
 python <skill-folder>/convert.py "<text>" --to en          # one target
 ```
 
@@ -53,7 +53,7 @@ characters.
 ## 3. Answer
 
 - Clear result → answer the converted message as if typed correctly. Add one line at the end:
-  *(read as: "สวัสดี" from `l;ylfu`)* — in the user's language.
+  *(read as: "привет" from `ghbdtn`)* — in the user's language.
 - Two readings both plausible → state the one you used at the top, then answer.
 - Nothing makes sense → show the best 1–2 candidates and ask once. Never ask the user to retype.
 
@@ -61,11 +61,12 @@ characters.
 
 | typed | layout | meant |
 |---|---|---|
-| `l;ylfu` | th | สวัสดี |
-| `me'ko` | th | ทำงาน |
 | `ghbdtn` | ru | привет |
+| `akuo` | he | שלום |
+| `lvpfh` | ar | مرحبا |
+| `vcmdls` | hi | नमस्ते |
 | `dkssudgktpdy` | ko | 안녕하세요 |
-| `้ำสสน` | en | hello |
+| `руддщ` | en | hello |
 
 Tables: Unicode CLDR release-43 Windows keyboards (Unicode License), base + Shift layers. Korean uses
 standard Dubeolsik jamo because Windows types Korean through an IME.
