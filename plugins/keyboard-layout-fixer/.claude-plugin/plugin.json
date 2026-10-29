@@ -1,0 +1,14 @@
+{
+  "name": "keyboard-layout-fixer",
+  "displayName": "Keyboard Layout Fixer",
+  "version": "1.0.0",
+  "description": "Fixes text typed in the wrong keyboard layout (l;ylfu → สวัสดี, ghbdtn → привет) across 31 layouts, then answers what you meant.",
+  "author": {
+    "name": "Chaiyapat",
+    "url": "https://github.com/PattrickChenforclaudeuse"
+  },
+  "homepage": "https://github.com/PattrickChenforclaudeuse/keyboard-layout-fixer",
+  "repository": "https://github.com/PattrickChenforclaudeuse/keyboard-layout-fixer",
+  "license": "MIT",
+  "keywords": ["keyboard-layout", "wrong-layout", "thai", "russian", "korean", "typing"]
+}

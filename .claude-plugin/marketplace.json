@@ -1,0 +1,15 @@
+{
+  "name": "keyboard-layout-fixer",
+  "description": "Fix text typed in the wrong keyboard layout",
+  "owner": {
+    "name": "Chaiyapat",
+    "url": "https://github.com/PattrickChenforclaudeuse"
+  },
+  "plugins": [
+    {
+      "name": "keyboard-layout-fixer",
+      "source": "./plugins/keyboard-layout-fixer",
+      "description": "Fixes text typed in the wrong keyboard layout (l;ylfu → สวัสดี, ghbdtn → привет) across 31 layouts, then answers what you meant."
+    }
+  ]
+}
