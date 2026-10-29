@@ -1,7 +1,7 @@
 # Keyboard Layout Fixer
 
-**Typed without looking and got `l;ylfu` instead of "สวัสดี"? Send it to Claude anyway.**
-This skill notices text typed in the wrong keyboard layout, converts it back, and answers what you meant.
+**Typed a whole message with the wrong keyboard layout active? Send it to Claude anyway.**
+This skill notices the scrambled text, reads it back on the layout you meant, and answers what you meant.
 
 | you typed | layout you meant | Claude reads |
 |---|---|---|

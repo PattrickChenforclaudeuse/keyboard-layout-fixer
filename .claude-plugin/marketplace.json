@@ -9,7 +9,7 @@
     {
       "name": "keyboard-layout-fixer",
       "source": "./plugins/keyboard-layout-fixer",
-      "description": "Fixes text typed in the wrong keyboard layout (l;ylfu → สวัสดี, ghbdtn → привет) across 31 layouts, then answers what you meant."
+      "description": "Turns text typed with the wrong keyboard layout active back into what you meant. 31 layouts, built from Unicode CLDR."
     }
   ]
 }
